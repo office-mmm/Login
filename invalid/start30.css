@@ -64,7 +64,7 @@ h3 {
 }
 
 .lf_head {
-    background: url('/logo.gif') 72px top no-repeat;
+    background: url('logo.gif') 72px top no-repeat;
     height: 40px;
     line-height: 40px;
     font-size: 20px;
@@ -168,7 +168,7 @@ h3 {
 }
 
     #add_auth .lf_head {
-        background: url('/logo.gif') left top no-repeat;
+        background: url('logo.gif') left top no-repeat;
         height: 40px;
         line-height: 40px;
         font-size: 20px;
@@ -261,7 +261,7 @@ h3 {
 }
 
 #dialog .lf_head {
-    background: url('/logo.gif') 75px top no-repeat;
+    background: url('logo.gif') 75px top no-repeat;
     height: 40px;
     line-height: 40px;
     font-size: 20px;
@@ -377,7 +377,7 @@ h3 {
     }
 
     .dialog_r .lf_head {
-        background: url('/logo.gif') 72px top no-repeat;
+        background: url('logo.gif') 72px top no-repeat;
         height: 40px;
         line-height: 40px;
         font-size: 20px;
